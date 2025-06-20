@@ -1,0 +1,154 @@
+{
+  "Danger 100": {
+    "value": "rgba(193, 12, 6, 1)"
+  },
+  "Gray 0": {
+    "value": "rgba(255, 255, 255, 1)"
+  },
+  "Visited 10": {
+    "value": "rgba(239, 229, 244, 1)"
+  },
+  "Gray 60": {
+    "value": "rgba(119, 119, 127, 1)"
+  },
+  "Warning 100": {
+    "value": "rgba(255, 171, 0, 1)"
+  },
+  "Gray 90": {
+    "value": "rgba(24, 24, 29, 1)"
+  },
+  "Gray 10": {
+    "value": "rgba(232, 232, 233, 1)"
+  },
+  "Primary 150": {
+    "value": "rgba(14, 36, 55, 1)"
+  },
+  "Highlight 5": {
+    "value": "rgba(253, 245, 246, 1)"
+  },
+  "Status chips": {
+    "Inactive": {
+      "value": "rgba(244, 241, 241, 1)"
+    },
+    "Negative": {
+      "value": "rgba(252, 232, 230, 1)"
+    },
+    "Neutral": {
+      "value": "rgba(230, 244, 251, 1)"
+    },
+    "Positive": {
+      "value": "rgba(234, 251, 243, 1)"
+    },
+    "Warning": {
+      "value": "rgba(255, 247, 176, 1)"
+    }
+  },
+  "Visited 120": {
+    "value": "rgba(81, 0, 122, 1)"
+  },
+  "Highlight 10": {
+    "value": "rgba(251, 234, 237, 1)"
+  },
+  "Success 150": {
+    "value": "rgba(22, 66, 16, 1)"
+  },
+  "Warning 5": {
+    "value": "rgba(255, 251, 242, 1)"
+  },
+  "Success 120": {
+    "value": "rgba(44, 132, 32, 1)"
+  },
+  "Success 100": {
+    "value": "rgba(56, 166, 41, 1)"
+  },
+  "Primary 120": {
+    "value": "rgba(28, 93, 150, 1)"
+  },
+  "Visited 150": {
+    "value": "rgba(50, 0, 76, 1)"
+  },
+  "Danger 5": {
+    "value": "rgba(252, 243, 243, 1)"
+  },
+  "Warning 10": {
+    "value": "rgba(255, 250, 230, 1)"
+  },
+  "Success 10": {
+    "value": "rgba(235, 246, 233, 1)"
+  },
+  "Primary 5": {
+    "value": "rgba(248, 248, 250, 1)"
+  },
+  "Discount": {
+    "value": "rgba(55, 166, 0, 1)"
+  },
+  "Highlight 120": {
+    "value": "rgba(172, 29, 55, 1)"
+  },
+  "Danger 10": {
+    "value": "rgba(248, 230, 230, 1)"
+  },
+  "Info 120": {
+    "value": "rgba(108, 136, 160, 1)"
+  },
+  "Danger 150": {
+    "value": "rgba(96, 5, 2, 1)"
+  },
+  "Gray 40": {
+    "value": "rgba(164, 164, 169, 1)"
+  },
+  "Visited 5": {
+    "value": "rgba(247, 242, 250, 1)"
+  },
+  "Gray 100": {
+    "value": "rgba(0, 0, 0, 1)"
+  },
+  "Warning 150": {
+    "value": "rgba(77, 56, 0, 1)"
+  },
+  "Gray 80": {
+    "value": "rgba(47, 47, 51, 1)"
+  },
+  "Danger 120": {
+    "value": "rgba(154, 9, 4, 1)"
+  },
+  "Success 5": {
+    "value": "rgba(245, 250, 244, 1)"
+  },
+  "Highlight 150": {
+    "value": "rgba(107, 18, 34, 1)"
+  },
+  "Gray 5": {
+    "value": "rgba(242, 242, 245, 1)"
+  },
+  "Visited 100": {
+    "value": "rgba(102, 0, 153, 1)"
+  },
+  "Primary 100": {
+    "value": "rgba(31, 116, 190, 1)"
+  },
+  "Info 10": {
+    "value": "rgba(227, 234, 242, 1)"
+  },
+  "Info 100": {
+    "value": "rgba(135, 170, 200, 1)"
+  },
+  "Primary 10": {
+    "value": "rgba(238, 242, 245, 1)"
+  },
+  "Info 150": {
+    "value": "rgba(67, 84, 99, 1)"
+  },
+  "Highlight 100": {
+    "value": "rgba(214, 34, 68, 1)"
+  },
+  "Warning 120": {
+    "value": "rgba(204, 136, 0, 1)"
+  },
+  "Gray 20": {
+    "value": "rgba(210, 210, 212, 1)"
+  },
+  "Info 5": {
+    "value": "rgba(249, 251, 252, 1)"
+  }
+}
