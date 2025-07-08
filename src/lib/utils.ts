@@ -16,7 +16,7 @@ export interface Component {
 export function getComponents(): Component[] {
   // exclude style item as it's not relevant to show in the ui
   const components = registry.items.filter(
-    (item) => item.type !== "registry:style",
+    (item) => item.type !== "registry:style"
   );
 
   return components as Component[];
@@ -26,7 +26,7 @@ export function getComponent(name: string): Component {
   const components = getComponents();
 
   const component = components.find(
-    (item: { name: string }) => item.name === name,
+    (item: { name: string }) => item.name === name
   );
 
   if (component == null) {

@@ -15,6 +15,7 @@ import { datePicker } from "@/app/(design)/components/[slug]/(demos)/date-picker
 import { dialog } from "@/app/(design)/components/[slug]/(demos)/dialog";
 import { dropdownMenu } from "@/app/(design)/components/[slug]/(demos)/dropdown-menu";
 import { input } from "@/app/(design)/components/[slug]/(demos)/input";
+import { numberInput } from "@/app/(design)/components/[slug]/(demos)/number-input";
 import { menuBar } from "@/app/(design)/components/[slug]/(demos)/menu-bar";
 import { select } from "@/app/(design)/components/[slug]/(demos)/select";
 import { separator } from "@/app/(design)/components/[slug]/(demos)/separator";
@@ -50,6 +51,7 @@ export const demos: { [name: string]: Demo } = {
   "data-table": dataTable,
   "dropdown-menu": dropdownMenu,
   input,
+  "number-input": numberInput,
   "menu-bar": menuBar,
   select,
   separator,

@@ -558,6 +558,28 @@
       ]
     },
     {
+      "name": "number-input",
+      "type": "registry:ui",
+      "title": "Number Input",
+      "description": "A numeric input field with increment and decrement buttons.",
+      "registryDependencies": [
+        "number-input",
+        "https://sana-registry-ten.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/app/starters/(minimal)/v0-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        },
+        {
+          "path": "src/components/ui/number-input.tsx",
+          "type": "registry:file",
+          "target": "components/number-input.tsx"
+        }
+      ]
+    },
+    {
       "name": "menu-bar",
       "type": "registry:ui",
       "title": "Menu Bar",

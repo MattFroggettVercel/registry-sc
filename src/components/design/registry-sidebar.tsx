@@ -54,6 +54,7 @@ export const componentItems = [
   { name: "Dialog", path: "/components/dialog" },
   { name: "Dropdown Menu", path: "/components/dropdown-menu" },
   { name: "Input", path: "/components/input" },
+  { name: "Number Input", path: "/components/number-input" },
   { name: "Menu Bar", path: "/components/menu-bar" },
   { name: "Select", path: "/components/select" },
   { name: "Separator", path: "/components/separator" },
@@ -105,13 +106,13 @@ export function RegistrySidebar() {
     if (searchTerm) {
       setFilteredComponents(
         componentItems.filter((item) =>
-          item.name.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
+          item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
       setFilteredBlocks(
         blockItems.filter((item) =>
-          item.name.toLowerCase().includes(searchTerm.toLowerCase()),
-        ),
+          item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
     } else {
       setFilteredComponents(componentItems);
