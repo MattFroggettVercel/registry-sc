@@ -1,103 +1,92 @@
 "use client";
 
-import { HelpCircle, Menu, Search, X } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
-
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useSidebar } from "@/components/ui/sidebar";
-
-import { Logo } from "./logo";
+import { Search, Phone, ChevronDown, User, ShoppingCart } from "lucide-react";
 
 export function BrandHeader() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const { state, toggleSidebar } = useSidebar();
-  const isCollapsed = state === "collapsed";
-
   return (
-    <header className="fixed z-50 w-full border-border border-b bg-background">
-      <div className="flex h-16 items-center justify-between px-2">
-        <div className="flex items-center space-x-4">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hidden size-8 md:flex"
-            onClick={toggleSidebar}
-          >
-            {isCollapsed ? (
-              <Menu className="size-4" />
-            ) : (
-              <X className="size-4" />
-            )}
-          </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-8 md:hidden"
-            onClick={toggleSidebar}
-          >
-            <Menu className="size-4" />
-          </Button>
-
-          <Link href="/" className="flex items-center">
-            <Logo />
-          </Link>
-        </div>
-
-        <div className="hidden items-center space-x-1 md:flex">
-          {isSearchOpen ? (
-            <div className="relative">
-              <Input
-                type="text"
-                placeholder="Search"
-                className="h-9 w-64 pl-9"
-                autoFocus
-                onBlur={() => setIsSearchOpen(false)}
-              />
-              <Search className="absolute top-2.5 left-3 size-4 text-foreground" />
+    <header className="bg-white shadow-sm font-sans">
+      <div className="border-t-2 border-red-600">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between py-4">
+            {/* Logo */}
+            <div className="flex items-center">
+              <div className="bg-red-600 rounded-full w-8 h-8 flex items-center justify-center">
+                <span className="text-white font-bold text-lg">s</span>
+              </div>
+              <span className="text-red-600 font-bold text-2xl ml-2">sana</span>
             </div>
-          ) : (
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-foreground"
-              onClick={() => setIsSearchOpen(true)}
-            >
-              <Search className="mr-2 size-4" />
-              Search
-            </Button>
-          )}
 
-          <Button variant="ghost" size="sm" className="text-foreground">
-            <HelpCircle className="mr-2 size-4" />
-            Support
-          </Button>
+            {/* Search Bar */}
+            <div className="flex-1 max-w-xl mx-8">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search on product name or article number"
+                  className="w-full border border-gray-300 rounded-md py-2 pl-4 pr-12 text-sm focus:ring-blue-500 focus:border-blue-500"
+                />
+                <button className="absolute inset-y-0 right-0 flex items-center justify-center bg-blue-600 text-white w-10 h-full rounded-r-md hover:bg-blue-700">
+                  <Search size={20} />
+                </button>
+              </div>
+            </div>
 
-          <Button variant="ghost" size="sm" className="text-foreground">
-            Upgrade Trial
-          </Button>
-
-          <Avatar className="size-8">
-            <AvatarFallback className="bg-primary text-primary-foreground">
-              <span className="text-xs">ME</span>
-            </AvatarFallback>
-          </Avatar>
-        </div>
-
-        <div className="flex gap-2 md:hidden">
-          <Button variant="ghost" size="sm" className="text-foreground">
-            <Search className="h-5 w-5" />
-          </Button>
-          <Avatar className="size-8">
-            <AvatarFallback className="bg-primary text-primary-foreground">
-              <span className="text-xs">ME</span>
-            </AvatarFallback>
-          </Avatar>
+            {/* Utility Nav */}
+            <div className="flex items-center space-x-6 text-sm text-gray-700">
+              <div className="flex items-center space-x-1 cursor-pointer hover:text-blue-600">
+                <Phone size={16} />
+                <span>Questions? Call us</span>
+                <ChevronDown size={16} />
+              </div>
+              <div className="flex items-center space-x-1 cursor-pointer hover:text-blue-600">
+                <User size={16} />
+                <ChevronDown size={16} />
+              </div>
+              <div className="flex items-center space-x-2 cursor-pointer hover:text-blue-600">
+                <ShoppingCart size={16} />
+                <span>0 product(s)</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Main Navigation */}
+      <nav className="bg-gray-50 border-t border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center space-x-8 h-12">
+            <a
+              href="#"
+              className="text-gray-800 hover:text-blue-600 text-sm font-medium"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-gray-800 hover:text-blue-600 text-sm font-medium"
+            >
+              Catalog
+            </a>
+            <a
+              href="#"
+              className="text-gray-800 hover:text-blue-600 text-sm font-medium"
+            >
+              Content
+            </a>
+            <a
+              href="#"
+              className="text-gray-800 hover:text-blue-600 text-sm font-medium"
+            >
+              Blog
+            </a>
+            <a
+              href="#"
+              className="text-gray-800 hover:text-blue-600 text-sm font-medium"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
   );
 }

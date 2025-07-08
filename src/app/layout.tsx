@@ -42,14 +42,14 @@ export default function RootLayout({
         GeistSans.variable,
         GeistMono.variable,
         MontserratSerif.variable,
-        "bg-background text-foreground",
+        "bg-background text-foreground"
       )}
     >
       <meta
         name="robots"
         content="noindex, nofollow, noarchive, nosnippet, noimageindex"
       />
-      <body className="flex grow">
+      <body className="grow">
         {children}
         <Analytics />
         <SpeedInsights />

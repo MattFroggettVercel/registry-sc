@@ -11,13 +11,12 @@ export default function ShellLayout({
   children: ReactNode;
 }>) {
   return (
-    <SidebarProvider>
+    <div className="flex flex-col">
       <BrandHeader />
-      <BrandSidebar />
       <main className="flex w-full justify-center">
         <div className="container">{children}</div>
       </main>
       <Toaster />
-    </SidebarProvider>
+    </div>
   );
 }
